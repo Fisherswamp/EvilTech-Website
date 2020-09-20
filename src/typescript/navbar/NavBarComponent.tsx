@@ -24,8 +24,8 @@ class NavBarComponent extends React.Component<NavBarComponentProps, NavBarCompon
 					<Nav className="mr-auto">
       					<Nav.Link href="#home" className="darkprimary titlefont-medium">Home</Nav.Link>
 						<Nav.Link href="#about" className="darkprimary titlefont-medium">About</Nav.Link>
-						<Nav.Link href="#about" className="darkprimary titlefont-medium">Portfolio</Nav.Link>
-						<Nav.Link href="#about" className="darkprimary titlefont-medium">Careers</Nav.Link>
+						<Nav.Link href="#partfolio" className="darkprimary titlefont-medium">Portfolio</Nav.Link>
+						<Nav.Link href="#careers" className="darkprimary titlefont-medium">Careers</Nav.Link>
 						<Nav.Link href="#contact" className="darkprimary titlefont-medium">Contact</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
