@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'EvilTech';
+  src: url('../fonts/eviltech/EvilTech.woff2') format('woff2'),
+       url('../fonts/eviltech/EvilTech.woff') format('woff'),
+       url('../fonts/eviltech/EvilTech.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.App {
+  text-align: center;
+  background-color: #121212;
+}
+
+.navbar.bg-dark.darkprimary {
+  background-color: #1F1b24 !important;
+
+}
+
+.primary {
+  background-color: #BB86FC;
+}
+
+.primary-variant {
+  background-color: #3700B3;
+}
+
+.secondary {
+  background-color: #03DAC6;
+}
+
+a:hover {
+  color: #03DAC6 !important;
+  text-decoration: underline;
+}
+
+.error {
+  background-color: #CF6679;
+}
+
+.titlefont {
+  font-family: 'EvilTech';
+  font-size: 90px;
+}
+
+.titlefont-medium {
+  font-family: 'EvilTech';
+  font-size: 40px;
+}
+
+.navheight {
+  height: 150px;
+}
