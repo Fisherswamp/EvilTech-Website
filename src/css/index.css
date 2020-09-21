@@ -7,9 +7,35 @@
   font-style: normal;
 }
 
-.App {
+#root {
   text-align: center;
   background-color: #121212;
+  font-family: 'EvilTech' !important;
+  font-size: 45px;
+}
+
+.form-control-lg, .form-control{
+  font-size: 2rem;
+} 
+p {
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+.blockquote.blockquote-large {
+  font-size: 70px;
+}
+
+.blockquote {
+  font-size: 35px;
+  font-style: italic;
+  text-align: center;
+}
+
+.centered-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar.bg-dark.darkprimary {
@@ -46,8 +72,4 @@ a:hover {
 .titlefont-medium {
   font-family: 'EvilTech';
   font-size: 40px;
-}
-
-.navheight {
-  height: 150px;
 }
