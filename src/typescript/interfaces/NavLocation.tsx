@@ -1,6 +1,7 @@
 export enum NavLocation {
     HOME, 
-    ABOUT, 
+    ABOUT,
+    FAQ, 
     PORTFOLIO, 
     CAREERS, 
     CONTACT

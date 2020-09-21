@@ -1,6 +1,7 @@
 import * as React from 'react';
 import About from '../about/About';
 import Contact from '../contact/Contact';
+import FAQ from '../faq/FAQ';
 import Home from '../home/Home';
 import { NavLocation } from '../interfaces/NavLocation';
 
@@ -20,6 +21,7 @@ const Router: React.FunctionComponent<RouterProps> = (props: RouterProps) => {
 const locationToComponentMap : locMap = {
     [NavLocation.HOME]: <Home/>,
     [NavLocation.ABOUT]: <About/>,
+    [NavLocation.FAQ]: <FAQ />,
     [NavLocation.CAREERS]: <Home/>,
     [NavLocation.PORTFOLIO]: <Home/>,
     [NavLocation.CONTACT]: <Contact/>,

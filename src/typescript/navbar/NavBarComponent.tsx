@@ -19,6 +19,17 @@ class NavBarComponent extends React.Component<NavBarComponentProps, NavBarCompon
 	}
 
 	render() { 
+		const navLinks = [];
+		for(const location in NavLocation) {
+			const locationName = NavLocation[location];
+			const locationEnum: NavLocation = parseInt(location);
+			if(locationName && isNaN(parseInt(locationName))) {
+				navLinks.push(
+					<Nav.Link key={location} href={`#${locationName}`} onClick={() => {this.props.updateNavigationWindow(locationEnum)}} 
+						className="darkprimary titlefont-medium">{locationName}</Nav.Link>
+				);
+			}
+		}
 		return (
 			<Navbar className="darkprimary navheight" expand="lg" variant="dark" bg="dark" sticky="top">
 				<Navbar.Brand href="#home" onClick={() => {this.props.updateNavigationWindow(NavLocation.HOME)}}
@@ -26,16 +37,7 @@ class NavBarComponent extends React.Component<NavBarComponentProps, NavBarCompon
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
   				<Navbar.Collapse id="navbarColor02">
 					<Nav className="mr-auto">
-						  <Nav.Link href="#home" onClick={() => {this.props.updateNavigationWindow(NavLocation.HOME)}} 
-						  className="darkprimary titlefont-medium">Home</Nav.Link>
-						<Nav.Link href="#about" onClick={() => {this.props.updateNavigationWindow(NavLocation.ABOUT)}} 
-						className="darkprimary titlefont-medium">About</Nav.Link>
-						<Nav.Link href="#portfolio" onClick={() => {this.props.updateNavigationWindow(NavLocation.PORTFOLIO)}} 
-						className="darkprimary titlefont-medium">Portfolio</Nav.Link>
-						<Nav.Link href="#careers" onClick={() => {this.props.updateNavigationWindow(NavLocation.CAREERS)}} 
-						className="darkprimary titlefont-medium">Careers</Nav.Link>
-						<Nav.Link href="#contact" onClick={() => {this.props.updateNavigationWindow(NavLocation.CONTACT)}} 
-						className="darkprimary titlefont-medium">Contact</Nav.Link>
+						{navLinks}
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar> 

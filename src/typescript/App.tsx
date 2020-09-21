@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { NavLocation } from './typescript/interfaces/NavLocation';
-import NavBar from './typescript/navbar/NavBarComponent';
-import Router from './typescript/routing/Router';
+import { NavLocation } from './interfaces/NavLocation';
+import NavBar from './navbar/NavBarComponent';
+import Router from './routing/Router';
 
 export interface AppProps {
   
